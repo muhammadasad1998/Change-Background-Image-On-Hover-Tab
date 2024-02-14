@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="full-width-container">
+      <div
+        class="main-container"
+        id="main-container"
+        style="background-image: url('assets/default.jpg')"
+      >
+        <div
+          class="child-container"
+          onmouseover="changeBackground('assets/image1.jpg')"
+        >
+          <div><h1>REALISTIC TATTOOS</h1></div>
+        </div>
+        <div
+          class="child-container"
+          onmouseover="changeBackground('assets/image2.jpg')"
+        >
+          <div><h1>BALINESE TATTOOS</h1></div>
+        </div>
+        <div
+          class="child-container"
+          onmouseover="changeBackground('assets/image3.jpg')"
+        >
+          <div><h1>JAPANESE TATTOOS</h1></div>
+        </div>
+        <div
+          class="child-container"
+          onmouseover="changeBackground('assets/image4.jpg')"
+        >
+          <div><h1>MANDALA TATTOOS</h1></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function changeBackground(imageUrl) {
+        document.getElementById("main-container").style.backgroundImage =
+          "url(" + imageUrl + ")";
+      }
+    </script>
+  </body>
+</html>
